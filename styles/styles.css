@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poetsen+One&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(22, 22, 22);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+header, footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 1em 0;
+    font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+header a {
+    margin-left: 2em;
+    display: inline-block;
+    transition: scale .2s;
+}
+
+header nav {
+    font-size: .8em;
+    padding: 1em 0;
+    width: 100vw;
+    margin-top: 1em;
+    border: 1px solid rgb(201, 201, 201);
+    text-transform: capitalize;
+}
+
+a.selected {
+    transform: scale(1.2);
+    font-weight: bolder;
+    position: relative;
+    display: inline-block;
+    width: auto;
+}
+
+a.selected::after {
+    content: ""; 
+    width: 100%;
+    position: absolute;
+    display: block;
+    height: 2px; 
+    background-color: rgb(10, 207, 42);
+}
+
+header a:not(.selected):hover  {
+    scale: 1.2;
+}
+
+footer {
+    border: 1px solid rgb(201, 201, 201);
+    font-size: .8em;
+    margin-top: auto;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    max-width: 920px;
+    width: 80%;
+    border-radius: .5em;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.index-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+   
+}
+
+.index-title {
+    padding: .2em 40px;
+}
+
+.index-subtitle {
+    font-size: .8em;
+    padding: 0em 40px;
+    font-weight: inherit;
+}
+
+.index-parragraph {
+    padding: 0em 40px;
+    font-size: 1.1em;
+}
+
+.index-image {
+    display: block;
+    height: 45vh;
+    object-position: top;
+    object-fit: cover;
+}
+
+
+
+/*
+    Page A
+*/
+
+.characteristic-container {
+    display: flex;
+}
+
+.characteristic-container section {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    width: 30%;
+    border: 1px solid gray;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: white;
+    transition: scale cubic-bezier(0.075, 0.82, 0.165, 1) .25s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.characteristic-container section:hover {
+    scale: 1.1;
+}
+
+.characteristic-container img{
+    width: 100px;
+    display: inline-block;
+}
