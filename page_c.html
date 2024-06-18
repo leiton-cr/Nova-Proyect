@@ -24,13 +24,11 @@
                 <a class="selected" href="./page_c.html">Características</a>
             </nav>
         </section>
-
     </header>
 
     <main class="animate__animated animate__fadeIn  c-main content-main">
         <h1>Características del personal</h1>
 
-    
         <div>
             <h2>Datos de los Empleados</h2>
             <table>
@@ -38,9 +36,9 @@
                     <tr>
                         <th>Nombre</th>
                         <th>Edad</th>
-                        <th>Formación Académica</th>
-                        <th>Curso de Manipulación de Alimentos</th>
-                        <th>Documentos de Identidad al Día</th>
+                        <th>Formación</th>
+                        <th>Curso</th>
+                        <th>Documentos</th>
                         <th>Nivel de Educación</th>
                     </tr>
                 </thead>
@@ -48,7 +46,7 @@
                     <tr>
                         <td>Juan Pérez</td>
                         <td>45</td>
-                        <td>Primaria Completa</td>
+                        <td>Primaria</td>
                         <td>Sí</td>
                         <td>Sí</td>
                         <td>Básico</td>
@@ -56,7 +54,7 @@
                     <tr>
                         <td>María López</td>
                         <td>22</td>
-                        <td>Secundaria Completa</td>
+                        <td>Secundaria</td>
                         <td>Sí</td>
                         <td>Sí</td>
                         <td>Intermedio</td>
@@ -64,7 +62,7 @@
                     <tr>
                         <td>Carlos García</td>
                         <td>28</td>
-                        <td>Primaria Completa</td>
+                        <td>Primaria</td>
                         <td>Sí</td>
                         <td>Sí</td>
                         <td>Básico</td>
@@ -72,7 +70,7 @@
                     <tr>
                         <td>Laura Martínez</td>
                         <td>29</td>
-                        <td>Secundaria Completa</td>
+                        <td>Secundaria</td>
                         <td>Sí</td>
                         <td>Sí</td>
                         <td>Intermedio</td>
@@ -80,7 +78,7 @@
                     <tr>
                         <td>Pedro Sánchez</td>
                         <td>41</td>
-                        <td>Primaria Completa</td>
+                        <td>Primaria</td>
                         <td>Sí</td>
                         <td>Sí</td>
                         <td>Básico</td>
@@ -88,37 +86,52 @@
                 </tbody>
             </table>
         </div>
+        
 
         <h2>Otras características</h2>
-    
+
+        <div class="button-container">
+            <button onclick="showSection('edad')">Edad</button>
+            <button onclick="showSection('formacion')">Formación Académica</button>
+            <button onclick="showSection('area')">Área Socioeconómica</button>
+            <button onclick="showSection('habilidades')">Habilidades</button>
+        </div>
+
+        <div class="button-container">
+            <button onclick="showSection('relacion')">Relación del equipo</button>
+            <button onclick="showSection('conflictos')">Solución de conflictos</button>
+            <button onclick="showSection('lideres')">Líderes de la empresa</button>
+            <button onclick="showSection('procesos')">Procesos y departamentos</button>
+        </div>
+
         <section id="edad" class="animate__animated animate__fadeIn">
             <h2>Edad</h2>
             <p>El personal de la empresa se complementa con el conocimiento de los trabajadores más veteranos y el
                 empuje de los más jóvenes, pues las edades rondan entre los 45 años a los 22 años de edad. Esto con
                 el fin de enriquecerse con distintos puntos de vista, formas de proceder y estilos.</p>
         </section>
-    
+
         <section id="formacion" class="animate__animated animate__fadeIn hidden">
             <h2>Formación Académica</h2>
             <p>Esta empresa no tiene requisitos de grado académico. Por esta razón, la mayoría de los trabajadores
                 tienen únicamente la primaria completa y algunos la secundaria completa. Sin embargo, solicitan
                 tener el curso de Manipulación de Alimentos y los documentos de identidad al día.</p>
         </section>
-    
+
         <section id="area" class="animate__animated animate__fadeIn hidden">
             <h2>Área Socioeconómica</h2>
             <p>La mayoría que labora en la empresa son personas extranjeras que viven en pobreza pero se les paga
                 conforme a la Ley. Estas no reciben ayuda económica del Gobierno y no cuentan con vivienda propia.
                 Son trabajadores que tienen la responsabilidad de ayudar a sus familiares para salir adelante.</p>
         </section>
-    
+
         <section id="habilidades" class="animate__animated animate__fadeIn hidden">
             <h2>Habilidades para el trabajo</h2>
             <p>Son personas que cuentan con creatividad, proactividad, liderazgo, negociación, flexibilidad y
                 adaptación al cambio; comunicación; organización y gestión del tiempo. Tienen destreza física,
                 poder de concentración, capacidad de trabajar en equipo y capacidad resolutiva.</p>
         </section>
-    
+
         <section id="relacion" class="animate__animated animate__fadeIn hidden">
             <h2>Relación del equipo de trabajo</h2>
             <p>Los empleados establecen una buena relación laboral. Son muy colaboradores, cultivan la
@@ -126,7 +139,7 @@
                 producción.
             </p>
         </section>
-    
+
         <section id="conflictos" class="animate__animated animate__fadeIn hidden">
             <h2>Solución de conflictos laborales</h2>
             <p>
@@ -136,7 +149,7 @@
                 la planta.
             </p>
         </section>
-    
+
         <section id="lideres" class="animate__animated animate__fadeIn hidden">
             <h2>Líderes de la empresa</h2>
             <p>Los líderes son tres, cuyos nombres son: Axel Puschendorf Fahrenkrug, Sr. Jens Thomsen Bender y Luis
@@ -144,7 +157,7 @@
                 Estos entregan confianza y respeto a los encargados de cada área y a sus trabajadores. Además,
                 tienen una comunicación eficaz y transparente con ellos.</p>
         </section>
-    
+
         <section id="procesos" class="animate__animated animate__fadeIn hidden">
             <h2>Procesos y departamentos</h2>
             <p>En la primera área de producción, se encuentra el área de pelado, conocida como “área sucia”, ya que
@@ -154,27 +167,13 @@
                 las romanas digitales.</p>
         </section>
 
-        <button onclick="showSection('edad')">Edad</button>
-        <button onclick="showSection('formacion')">Formación Académica</button>
-        <button onclick="showSection('area')">Área Socioeconómica</button>
-        <button onclick="showSection('habilidades')">Habilidades</button>
-        <button onclick="showSection('relacion')">Relación del equipo</button>
-        <button onclick="showSection('conflictos')">Solución de conflictos</button>
-        <button onclick="showSection('lideres')">Líderes de la empresa</button>
-        <button onclick="showSection('procesos')">Procesos y departamentos</button>
-    
         <script src="./scripts/script.js"></script>
-
 
     </main>
 
     <footer>
         © 2024 NOVA
     </footer>
-
-
-
-
 
 </body>
 

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poetsen+One&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,10 +14,10 @@ a {
 }
 
 ul a {
-    color: rgb(5, 129, 71);
+    color: #04AA6D;
 }
 
-ul{
+ul {
     margin-left: 1em;
 }
 
@@ -28,7 +30,8 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-header, footer {
+header,
+footer {
     text-align: center;
     font-weight: bold;
     padding: 1em 0;
@@ -67,15 +70,15 @@ a.selected {
 }
 
 a.selected::after {
-    content: ""; 
+    content: "";
     width: 100%;
     position: absolute;
     display: block;
-    height: 2px; 
-    background-color: rgb(5, 129, 71);
+    height: 2px;
+    background-color: #04AA6D;
 }
 
-header a:not(.selected):hover  {
+header a:not(.selected):hover {
     scale: 1.2;
 }
 
@@ -92,15 +95,63 @@ main {
     border-radius: .5em;
 }
 
-h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+h1,
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+div:has(table) {
+    overflow: auto;
+    margin: 2em 0;
+}
+
+table {
+    min-width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    cursor: pointer;
+}
+
+table th {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+table th:nth-child(1),
+table th:nth-child(3),
+table th:nth-child(6) table td:nth-child(1),
+table td:nth-child(3),
+table td:nth-child(6) {
+    width: 20%;
 }
 
 .index-main {
     display: flex;
     flex-direction: column;
     gap: 2em;
-   
+
 }
 
 .index-title {
@@ -137,11 +188,16 @@ h1{
     margin: 2em 0;
 }
 
-.content-main p {
+.content-main p,
+.content-main div {
     margin: 1em 0;
 }
 
-.content-main img:not(.characteristic-container img){
+.content-main h2 {
+    margin: 1em 0;
+}
+
+.content-main img:not(.characteristic-container img) {
     width: 100%;
     height: 45vh;
     object-fit: cover;
@@ -165,8 +221,6 @@ h1{
     font-family: "Josefin Sans", sans-serif;
 }
 
-
-
 .characteristic-container section {
     display: flex;
     gap: 2em;
@@ -181,9 +235,7 @@ h1{
     transition: scale cubic-bezier(0.075, 0.82, 0.165, 1) .25s, border linear .25s;
     cursor: pointer;
     user-select: none;
-
     min-width: 250px;
-
 }
 
 .characteristic-container h2 {
@@ -202,7 +254,7 @@ h1{
     scale: 1.1;
 }
 
-.characteristic-container img{
+.characteristic-container img {
     width: 100px;
     display: inline-block;
 }
@@ -213,4 +265,34 @@ h1{
 
 .b-main ul {
     list-style: none;
+}
+
+/*
+    Page c
+*/
+
+.button-container {
+    display: flex;
+    gap: 1em;
+    justify-content: space-evenly;
+    margin: 1em 0;
+    flex-wrap: wrap;
+}
+
+.button-container button {
+    width: 25ch;
+    font-weight: bold;
+    padding: 1em;
+    cursor: pointer;
+    background-color: #04AA6D;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    border: none;
+    transition: opacity .25s, scale .25s;
+    border-radius: .25em;
+}
+
+.button-container button:hover {
+    opacity: .8;
+    scale: 1.05;
 }
