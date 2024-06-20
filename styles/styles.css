@@ -309,6 +309,11 @@ table td:nth-child(6) {
     border-radius: 1em;
 }
 
+.c-main li {
+    list-style: none;
+    padding: 0.5em;
+}
+
 .button-container {
     display: flex;
     gap: 1em;
