@@ -265,11 +265,49 @@ table td:nth-child(6) {
 
 .b-main ul {
     list-style: none;
+    margin: 0;
+}
+
+.b-main ul b {
+    color: #1b7e59;
+}
+
+.b-main li{
+    transition: scale .25s;
+    cursor: pointer;
+}
+
+.b-main li:hover{
+    scale: 1.02;
+    opacity: 0.8;
+}
+
+.b-main li::before {
+    content: "🕑 ";
 }
 
 /*
     Page c
 */
+
+.c-main .characteristic h2 {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.c-main .characteristic h2{
+    padding: 1em;
+}
+
+.c-main p {
+    padding: 0 1em;
+}
+
+.c-main section {
+    background-color: rgb(240, 240, 240);
+    min-height: 200px;
+    border-radius: 1em;
+}
 
 .button-container {
     display: flex;
